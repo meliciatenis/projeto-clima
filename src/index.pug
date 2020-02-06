@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="../node_modules/bootstrap/dist/css/bootstrap.min.css")
+        link(rel="stylesheet", href="style.css")
+        link(rel="icon" href="../img/favicon.ico" type="image/x-icon")
+        title EL CLIMITA
+    body.app-light
+        header
+            nav(class="navbar navbar-dark bg-dark justify-content-between")
+                img(class="navbar-brand" src="../img/cloud.png", alt="")
+                h1 EL CLIMITA
+                form(class="form-inline") 
+                    input(class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search") 
+                    button(class="btn btn-outline-success my-2 my-sm-0" type="submit") Search
+        
+        section.container.principal
+            section.row
+                div.col-md-6
+                    div.Clima.container
+                        div.momento.row
+                            h2.col-md-3 21
+                            div.col-md-1.CF
+                                p.row.c   °C
+                                hr.row 
+                                p.row   °F
+                            div.descripcion.col-md-7
+                                p Hoy
+                                p Parcialmente nublado/LLuvioso
+                        div.ciudad.row
+                            img.foto.col-md(src="../img/storm.png", alt="tormenta")
+                            h2.col-md-8 São Paulo
+                div.col-md-6           
+                    div.container.prevision
+                        canvas.line-charts
+                
+        section.Grafico.container
+            div.row
+                div.col-md-5.parametros
+                    p.especificaciones Precipitaciones | 30%
+                        img.especificaciones(src="../img/water.png", alt="")
+                div.col-md-1.linha
+                div.col-md-5.parametros
+                    p.especificaciones índice UV | Bajo
+                        img.especificaciones(src="../img/skin.png", alt="")
+        footer
+    script(src='../node_modules/bootstrap/dist/css/bootstrap.min.js')
+    script(src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0")
+    script(src='script.js')

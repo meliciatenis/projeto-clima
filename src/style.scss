@@ -1,0 +1,107 @@
+$color-Dark-Slate-Dark: #20565f;
+$color-Platinum: #e4e0d7;
+$color-Columbia-Blue: #c5ddd0;
+$color-Cadet-Blue: #60a99e;
+$color-Azuerish-white: #d9efed;
+
+body{
+    font-family: 'Open Sans Condensed', 
+                  sans-serif;
+    
+                h1 {
+                    color: $color-Azuerish-white;
+                }
+
+                  .principal{
+                    max-width: 80%;
+                
+                    .Clima{
+                        margin-top: 2em;
+                        .grados{
+                            display: flex;
+                        }
+                
+                        .CF{
+                            margin: auto;
+                        }
+                        .descripcion{
+                            font-size: 18px;
+                            margin: auto;
+                        }
+                        .momento{
+                            h2{
+                                font-size: 150px;
+                            }
+                        }
+                        .ciudad{
+                            h2{
+                                font-size: 600%;
+                            }
+                        }
+                    }   
+                
+                    .prevision{
+                        border-radius: 5px;
+                        margin-top: 3em;
+                        padding:2em;
+                    }
+                }
+                
+                .Grafico{
+                    border-radius: 5px;
+                    height: 150px;
+                    margin-top: 3em;
+                    margin-block-end: 3em;
+                    font-size: 25px
+                    }
+                
+                .parametros{
+                    margin: 2em 0 0 1em;
+                    
+                    img{
+                        width: auto;
+                        }
+                }
+}
+
+.app-light{
+    color: $color-Dark-Slate-Dark;
+    
+    .prevision{
+        background-color: $color-Cadet-Blue;
+        color: white;
+        
+    }
+    .Grafico{
+        background-color: $color-Cadet-Blue;
+        color: white;
+    }
+}
+
+.app-dark{
+    background-color: $color-Dark-Slate-Dark;
+    color: $color-Platinum;
+
+    .prevision{
+        background-color: $color-Platinum;
+        color: $color-Dark-Slate-Dark;
+    }
+
+    .Grafico{
+        background-color: $color-Platinum;
+        color: $color-Dark-Slate-Dark;
+    }
+}
+
+
+.linha{
+    border-left: white 2px solid;
+    height: 30px;
+    padding: 2em 0 1em 0;
+    margin: 1.5em 0 0 1.5em;
+}
+
+
+    
+
+

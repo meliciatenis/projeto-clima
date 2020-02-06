@@ -1,0 +1,58 @@
+body {
+  font-family: 'Open Sans Condensed',  sans-serif; }
+  body h1 {
+    color: #d9efed; }
+  body .principal {
+    max-width: 80%; }
+    body .principal .Clima {
+      margin-top: 2em; }
+      body .principal .Clima .grados {
+        display: flex; }
+      body .principal .Clima .CF {
+        margin: auto; }
+      body .principal .Clima .descripcion {
+        font-size: 18px;
+        margin: auto; }
+      body .principal .Clima .momento h2 {
+        font-size: 150px; }
+      body .principal .Clima .ciudad h2 {
+        font-size: 600%; }
+    body .principal .prevision {
+      border-radius: 5px;
+      margin-top: 3em;
+      padding: 2em; }
+  body .Grafico {
+    border-radius: 5px;
+    height: 150px;
+    margin-top: 3em;
+    margin-block-end: 3em;
+    font-size: 25px; }
+  body .parametros {
+    margin: 2em 0 0 1em; }
+    body .parametros img {
+      width: auto; }
+
+.app-light {
+  color: #20565f; }
+  .app-light .prevision {
+    background-color: #60a99e;
+    color: white; }
+  .app-light .Grafico {
+    background-color: #60a99e;
+    color: white; }
+
+.app-dark {
+  background-color: #20565f;
+  color: #e4e0d7; }
+  .app-dark .prevision {
+    background-color: #e4e0d7;
+    color: #20565f; }
+  .app-dark .Grafico {
+    background-color: #e4e0d7;
+    color: #20565f; }
+
+.linha {
+  border-left: white 2px solid;
+  height: 30px;
+  padding: 2em 0 1em 0;
+  margin: 1.5em 0 0 1.5em; }
