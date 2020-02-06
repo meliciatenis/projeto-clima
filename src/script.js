@@ -2,15 +2,12 @@ var d = new Date();
 var n = d.getHours(); 
 var body = document.getElementsByTagName('body')[0];
 var ctx = document.getElementsByClassName('line-charts');
-console.log(n)
 CambioDeEstilo(n);
 
 function CambioDeEstilo(n){
-    if(n < 6){
-    }else if(n >= 18){
+    if (n >= 18 || n < 6) {
         body.classList.remove('app-light');
         body.classList.add('app-dark');
-       
     }
 }
 
